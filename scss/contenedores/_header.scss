@@ -1,0 +1,41 @@
+body{
+    background-color: $color-background;
+}
+
+/* header logo y navbar*/
+header{
+    background-color: $color-principal;
+}
+.logo{
+    height: 115px;
+}
+
+.nav__icon{
+    width: 32px;
+    height: 32px;
+}
+
+.titular__nav{
+    font-family: 'Poppins';
+    display: inline-block;
+    position: relative;
+    &:hover{
+        color: whitesmoke;
+    }
+    &:after{
+        content: '';
+        position: absolute;
+        width: 100%;
+        height: 1.5px;
+        bottom: 0;
+        left: 0;
+        background-color: whitesmoke;
+        transform: scaleX(0);
+        transform-origin: bottom right;
+        transition: transform 0.6s ease-out;
+    }
+    &:hover:after{
+        transform: scaleX(1);
+        transform-origin: bottom left;
+    }
+}

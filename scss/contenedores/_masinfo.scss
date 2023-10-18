@@ -1,0 +1,65 @@
+.main-info{
+    background-image: url("../img/menu-ketoo.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 775px;
+}
+
+.mas-info{
+    .lista-info{
+        box-sizing: border-box;
+        text-align: center;
+        padding: 0px 34px;
+        .item-info{    
+            list-style-type: none;
+            width: 345px;
+            height: 368px;
+            border-radius: 10px;
+            margin: 0 -50px;
+            margin-top: -265px;
+            background-color: rgba(255, 255, 255, 0.7);
+            .data-masinfo{
+                display: flex;
+                padding: 5px 35px 5px;
+                .estrellas{
+                    height: 4%;
+                    width: 4%;
+                }
+                h3{
+                    text-align: center;
+                    text-decoration: none;
+                    color: black;
+                    font-family: 'poppins';
+                    font-size: 24px;
+                }
+             }
+            .texto-masinfo{
+                font-size: 18px;
+                padding: 5px 0px 4px;
+            }
+            .peso-total{
+                padding: 5px 15px 10px;
+            }
+            .califica{
+                border-color:#c0c0c0;
+                border-radius:44px;
+                border-style:solid;
+                border-width: 2px;
+                font-size:18px;
+                font-weight:700;
+                line-height:26px;
+                padding:8px 16px 6px;
+                text-align:center;
+                transition: background-color 0.3s;
+                &:hover{
+                    background-color: rgba(255, 153, 0, 0.6);
+                }
+                .estrella-califica{
+                    width: 25px;
+                }
+            }
+        }
+    }
+}
+
+
