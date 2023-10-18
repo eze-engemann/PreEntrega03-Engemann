@@ -46,8 +46,42 @@
     }
 }
 
+/* Escritorio grande */
+@media (min-width: 1200px){
+    .nosotros {
+        .container__nosotros {
+            .titulo__nosotros{
+                font-size: 5rem;
+            }
+            .nosotros-img-desc {
+                display: flex;
+                align-items: center;
+                .nosotros__texto {
+                    font-size: $tamanioletra + 9px;
+                    @include medidastexto;
+                }
+            }
+            .container__funciona{
+                margin-top: 2%;
+                .titulo__comofunciona{
+                    font-size: 3rem;
+                }
+                .funciona-img-desc{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    align-items: center;
+                    .funciona__texto{
+                        font-size: $tamanioletra + 9px;
+                        @include medidastexto;
+                    }
+                }
+            }
+        }
+    }
+}
+
 /* Escritorio */
-@media only screen and (min-width: 992px) /*and (max-width: 1199px)*/{
+@media only screen and (min-width: 992px) and (max-width: 1199px){
     .nosotros {
         .container__nosotros {
 

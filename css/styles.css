@@ -224,8 +224,32 @@ header {
   .nosotros .container__nosotros .container__funciona .funciona-img-desc .funciona__texto {
     margin-top: 1rem; }
 
+/* Escritorio grande */
+@media (min-width: 1200px) {
+  .nosotros .container__nosotros .titulo__nosotros {
+    font-size: 5rem; }
+  .nosotros .container__nosotros .nosotros-img-desc {
+    display: flex;
+    align-items: center; }
+    .nosotros .container__nosotros .nosotros-img-desc .nosotros__texto {
+      font-size: 20px;
+      margin-left: 1%;
+      margin-right: 1%; }
+  .nosotros .container__nosotros .container__funciona {
+    margin-top: 2%; }
+    .nosotros .container__nosotros .container__funciona .titulo__comofunciona {
+      font-size: 3rem; }
+    .nosotros .container__nosotros .container__funciona .funciona-img-desc {
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center; }
+      .nosotros .container__nosotros .container__funciona .funciona-img-desc .funciona__texto {
+        font-size: 20px;
+        margin-left: 1%;
+        margin-right: 1%; } }
+
 /* Escritorio */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
   .nosotros .container__nosotros .nosotros-img-desc {
     display: flex; }
     .nosotros .container__nosotros .nosotros-img-desc .nosotros__texto {
