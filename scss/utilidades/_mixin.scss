@@ -3,3 +3,10 @@
     width: $ancho;
     height: $alto;
 }
+
+//mixin sin parametros
+
+@mixin medidastexto{
+    margin-left: 1%;
+    margin-right: 1%;
+}

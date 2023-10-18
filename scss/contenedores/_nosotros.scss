@@ -1,36 +1,99 @@
+.nosotros {
+    .container__nosotros {
+        display: grid;
+        align-content: center;
+        text-align: center;
 
-.container__nosotros{
-    display: grid;
-    align-content: center;
-    text-align: center;
-    .inicio__nosotros{
-        .titulo__nosotros{
+        .titulo__nosotros {
             font-size: 3rem;
         }
-        .nosotros__imgintro{
-           margin-top: $margen-texto;
-           .nosotrosimg{
-            @include medidasgif(100%, auto);
-           } 
-        }
-        .nosotros__texto{
-            margin-top: $margen-texto;
-        }
-    }
-    .container__funciona{
-        .titulo__comofunciona{
-            font-size: 2rem;
-            margin-top: 5px;
-        }
-        .funciona__imgintro{
-            margin-top: $margen-texto;
-            .funcionaimg{
-                @include medidasgif(100%, auto);
+
+        .nosotros-img-desc {
+            .nosotros__imgintro {
+                margin-top: $margen-texto;
+
+                .nosotrosimg {
+                    @include medidasgif(100%, auto);
+                }
+
+            }
+
+            .nosotros__texto {
+                margin-top: $margen-texto;
             }
         }
-        .funciona__texto{
-            margin-top: $margen-texto;
+
+        .container__funciona {
+            .titulo__comofunciona {
+                font-size: 2rem;
+                margin-top: 5px;
+            }
+
+            .funciona-img-desc {
+                .funciona__imgintro {
+                    margin-top: $margen-texto;
+
+                    .funcionaimg {
+                        @include medidasgif(100%, auto);
+                    }
+                }
+
+                .funciona__texto {
+                    margin-top: $margen-texto;
+                }
+            }
         }
     }
 }
 
+/* Escritorio */
+@media only screen and (min-width: 992px) /*and (max-width: 1199px)*/{
+    .nosotros {
+        .container__nosotros {
+
+            .nosotros-img-desc {
+                display: flex;
+
+                .nosotros__texto {
+                    font-size: $tamanioletra + 1px;
+                    @include medidastexto;
+                }
+            }
+            .container__funciona{
+                .funciona-img-desc{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    .funciona__texto{
+                        font-size: $tamanioletra + 1px;
+                        @include medidastexto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .nosotros {
+        .container__nosotros {
+
+            .nosotros-img-desc {
+                display: flex;
+
+                .nosotros__texto {
+                    font-size: $tamanioletra;
+                }
+            }
+            .container__funciona{
+                .funciona-img-desc{
+                    display: flex;
+                    flex-direction: row-reverse;
+                    .funciona__texto{
+                        font-size: $tamanioletra;
+                    }
+                }
+            }
+        }
+    }
+}
