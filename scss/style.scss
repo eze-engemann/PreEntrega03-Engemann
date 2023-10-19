@@ -8,7 +8,7 @@
 //importo archivos secundarios
 @import "utilidades/variables";
 @import "utilidades/mixin";
-
+@import "utilidades/extend";
 @import "contenedores/header";
 @import "contenedores/viandasdia";
 @import "contenedores/masinfo";
@@ -268,8 +268,9 @@ span{
         }
     }
 }
+
 /* Escritorio grande */
-@media (min-width: 1200px){
+@media (min-width: 1200px) {
     .container-items {
         display: flex;
         /* Cambio a flexbox solo en esta media query */
@@ -289,8 +290,8 @@ span{
 }
 
 /* Escritorio */
-@media only screen and (min-width: 992px) and (max-width: 1199px){
-    .container-items{
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .container-items {
         display: flex;
         flex-direction: row;
         gap: 4%;
@@ -307,8 +308,8 @@ span{
 }
 
 /* Escritorio pequeño / tablet */
-@media only screen and (min-width: 768px) and (max-width: 991px){
-    .container-items{
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .container-items {
         display: flex;
         flex-direction: row;
         gap: 3%;

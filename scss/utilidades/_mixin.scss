@@ -4,6 +4,11 @@
     height: $alto;
 }
 
+@mixin marginleftybottom($left,$bottom){
+    margin-left: $left;
+    margin-bottom: $bottom;
+}
+
 //mixin sin parametros
 
 @mixin medidastexto{

@@ -5,6 +5,15 @@
   padding: 0;
   box-sizing: border-box; }
 
+.catalogo-viandas .lista-viandas, .catalogo-viandas .lista-viandas .item-viandas .info-producto .container-mas, .catalogo-viandas .lista-viandas .item-viandas .info-producto .container-mas .container-mas-link, .catalogo-viandas .lista-viandas .item-viandas .precio-producto, .catalogo-viandas .lista-viandas .item-viandas .contenedor-linea {
+  display: flex;
+  justify-content: center; }
+
+.catalogo-viandas .lista-viandas .item-viandas .aniadir-carrito, .contenedor .formulario form input[type="submit"] {
+  padding: 10px 20px;
+  border-radius: 3px;
+  cursor: pointer; }
+
 body {
   background-color: #ebebeb; }
 
@@ -47,15 +56,20 @@ header {
     box-sizing: border-box;
     text-align: center;
     margin-top: 0px;
-    padding: 2px 2px; }
+    padding: 2px 2px;
+    flex-wrap: wrap; }
     .catalogo-viandas .lista-viandas .item-viandas {
       list-style-type: none;
       background: #fff;
-      height: 560px;
+      height: 580px;
+      width: 250px;
       border-radius: 10px;
-      margin-bottom: 15px; }
+      margin-left: 5%;
+      margin-bottom: 5%; }
+      .catalogo-viandas .lista-viandas .item-viandas:last-child {
+        margin-right: 0; }
       .catalogo-viandas .lista-viandas .item-viandas .img-catalogo {
-        width: 100%;
+        max-width: 100%;
         height: 300px;
         object-fit: cover; }
       .catalogo-viandas .lista-viandas .item-viandas .info-producto .nombre-vianda {
@@ -63,39 +77,34 @@ header {
       .catalogo-viandas .lista-viandas .item-viandas .info-producto .menu-style {
         color: #333; }
       .catalogo-viandas .lista-viandas .item-viandas .info-producto .container-mas {
-        display: flex;
-        justify-content: center;
         vertical-align: middle; }
         .catalogo-viandas .lista-viandas .item-viandas .info-producto .container-mas .container-mas-link {
-          display: flex;
-          justify-content: center;
           vertical-align: middle;
           color: black;
-          text-decoration: none; }
+          text-decoration: none;
+          align-items: flex-start; }
           .catalogo-viandas .lista-viandas .item-viandas .info-producto .container-mas .container-mas-link .icon-mas {
             width: 25px; }
       .catalogo-viandas .lista-viandas .item-viandas .precio-producto {
-        display: flex;
-        justify-content: center; }
+        align-items: baseline; }
+        .catalogo-viandas .lista-viandas .item-viandas .precio-producto .valor {
+          color: #666666;
+          font-weight: bold;
+          font-size: 30px; }
         .catalogo-viandas .lista-viandas .item-viandas .precio-producto .select-cant {
           width: 30px;
           height: 25px;
           margin-left: 40px; }
-      .catalogo-viandas .lista-viandas .item-viandas .contenedor-linea {
-        display: flex;
-        justify-content: center; }
-        .catalogo-viandas .lista-viandas .item-viandas .contenedor-linea .linea {
-          border: none;
-          border-top: 1px solid #333;
-          margin: 10px 0;
-          width: 200px; }
-      .catalogo-viandas .lista-viandas .item-viandas .añadir-carrito {
-        padding: 10px 20px;
+      .catalogo-viandas .lista-viandas .item-viandas .contenedor-linea .linea {
+        border: none;
+        border-top: 1px solid #333;
+        margin: 10px 0;
+        width: 200px; }
+      .catalogo-viandas .lista-viandas .item-viandas .aniadir-carrito {
         border: none;
         background-color: #30A2FF;
-        color: #fff;
-        border-radius: 3px; }
-        .catalogo-viandas .lista-viandas .item-viandas .añadir-carrito:hover {
+        color: #fff; }
+        .catalogo-viandas .lista-viandas .item-viandas .aniadir-carrito:hover {
           transform: scale(1.05); }
       .catalogo-viandas .lista-viandas .item-viandas:hover {
         box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2); }
@@ -190,10 +199,7 @@ header {
   .contenedor .formulario form input[type="submit"] {
     background-color: transparent;
     color: #2f6178;
-    padding: 10px 20px;
     font-size: 16px;
-    border-radius: 6px;
-    cursor: pointer;
     transition: all 0.3s ease;
     border-color: #2f6178; }
   .contenedor .formulario form input[type="submit"]:hover {
