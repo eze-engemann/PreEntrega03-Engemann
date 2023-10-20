@@ -31,6 +31,7 @@
             .info-producto {
                 .nombre-vianda {
                     font-size: 1.5rem;
+                    color: #2F6178;
                 }
 
                 .menu-style {
@@ -102,4 +103,48 @@
 }
 
 
-@media only screen and (min-width: 768px) and (max-width: 991px) {}
+/* Escritorio grande */
+@media (min-width: 1200px) {
+    .catalogo-viandas {
+        .lista-viandas {
+            .item-viandas {
+                @include marginleftybottom(2%, 2%);
+            }
+        }
+    }
+}
+
+/* Escritorio */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .catalogo-viandas {
+        .lista-viandas {
+            .item-viandas {
+                @include marginleftybottom(3%, 3%);
+            }
+        }
+    }
+}
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .catalogo-viandas {
+        .lista-viandas {
+            .item-viandas {
+                height: 605px;
+                width: 293px;
+
+                .info-producto {
+                    .nombre-vianda {
+                        font-size: 1.9rem;
+                    }
+                }
+
+                .precio-producto {
+                    .valor {
+                        font-size: 35px;
+                    }
+                }
+            }
+        }
+    }
+}
