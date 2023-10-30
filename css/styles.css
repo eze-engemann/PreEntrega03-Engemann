@@ -129,71 +129,126 @@ header {
     .catalogo-viandas .lista-viandas .item-viandas .precio-producto .valor {
       font-size: 35px; } }
 
-.mas-info {
-  display: flex; }
-  .mas-info .lista-info {
-    box-sizing: border-box;
-    text-align: center; }
-    .mas-info .lista-info .item-info {
-      list-style-type: none;
-      width: 345px;
-      height: 375px;
-      border-radius: 10px;
-      background-image: url("../img/menu-ketoo.png");
-      background-size: cover;
-      background-position: center; }
-      .mas-info .lista-info .item-info .titulo-box {
-        font-size: 2rem;
-        color: #2F6178;
-        font-weight: 600; }
-      .mas-info .lista-info .item-info .data-masinfo {
-        display: flex;
-        align-items: baseline;
-        padding: 5px 35px 5px; }
-        .mas-info .lista-info .item-info .data-masinfo .estrellas {
-          height: 7%;
-          width: 7%; }
-        .mas-info .lista-info .item-info .data-masinfo h2 {
-          text-align: center;
-          text-decoration: none;
-          color: black;
-          font-family: 'poppins';
-          font-size: 24px; }
-      .mas-info .lista-info .item-info .texto-masinfo {
-        font-size: 18px;
-        padding: 5px 0px 4px; }
-      .mas-info .lista-info .item-info .peso-total {
-        padding: 5px 15px 10px;
-        font-size: 30px; }
-      .mas-info .lista-info .item-info .contenedor-califica {
-        display: flex;
-        justify-content: center; }
-        .mas-info .lista-info .item-info .contenedor-califica .califica {
+.main-info {
+  padding: initial; }
+  .main-info .mas-info {
+    display: flex;
+    flex-direction: column;
+    margin-top: 5%;
+    align-items: center; }
+    .main-info .mas-info .lista-info {
+      box-sizing: border-box;
+      text-align: center;
+      padding-left: initial; }
+      .main-info .mas-info .lista-info .item-info {
+        list-style-type: none;
+        width: 300px;
+        height: 485px;
+        border-radius: 10px;
+        background-image: url("../img/menu-ketoo.png");
+        background-size: cover;
+        background-position: center; }
+        .main-info .mas-info .lista-info .item-info .titulo-box {
+          font-size: 2rem;
+          color: #2F6178;
+          font-weight: 600; }
+        .main-info .mas-info .lista-info .item-info .data-masinfo {
           display: flex;
-          align-items: center;
-          border-color: #c0c0c0;
-          border-radius: 44px;
-          border-style: solid;
-          border-width: 2px;
+          align-items: baseline;
+          padding: 5px 35px 5px; }
+          .main-info .mas-info .lista-info .item-info .data-masinfo .estrellas {
+            height: 7%;
+            width: 7%; }
+          .main-info .mas-info .lista-info .item-info .data-masinfo h2 {
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            font-family: 'poppins';
+            font-size: 24px; }
+        .main-info .mas-info .lista-info .item-info .texto-masinfo {
           font-size: 18px;
-          font-weight: 700;
-          line-height: 26px;
-          padding: 8px 16px 6px;
-          text-align: center;
-          transition: background-color 0.3s; }
-          .mas-info .lista-info .item-info .contenedor-califica .califica:hover {
-            background-color: rgba(255, 153, 0, 0.6); }
-          .mas-info .lista-info .item-info .contenedor-califica .califica .estrella-califica {
-            width: 25px; }
-  .mas-info .contenedor-descripcion {
-    margin: 0 5%; }
-    .mas-info .contenedor-descripcion .mar-viandas-titulo {
-      font-size: 50px;
-      text-align: center; }
-    .mas-info .contenedor-descripcion .mar-viandas-logo {
-      width: 100px; }
-    .mas-info .contenedor-descripcion .parrafo-mar-viandas {
-      margin-top: 3%; }
+          padding: 5px 0px 4px; }
+        .main-info .mas-info .lista-info .item-info .peso-total {
+          padding: 5px 15px 10px;
+          font-size: 30px; }
+        .main-info .mas-info .lista-info .item-info .contenedor-califica {
+          display: flex;
+          justify-content: center; }
+          .main-info .mas-info .lista-info .item-info .contenedor-califica .califica {
+            display: flex;
+            align-items: center;
+            border-color: #c0c0c0;
+            border-radius: 44px;
+            border-style: solid;
+            border-width: 2px;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 26px;
+            padding: 8px 16px 6px;
+            text-align: center;
+            transition: background-color 0.3s; }
+            .main-info .mas-info .lista-info .item-info .contenedor-califica .califica:hover {
+              background-color: rgba(255, 153, 0, 0.6); }
+            .main-info .mas-info .lista-info .item-info .contenedor-califica .califica .estrella-califica {
+              width: 25px; }
+    .main-info .mas-info .contenedor-descripcion {
+      margin: 0 5%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo {
+        display: flex;
+        align-items: center; }
+        .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-logo {
+          width: 100px; }
+        .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-titulo {
+          font-size: 35px;
+          text-align: center; }
+        .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .parrafo-mar-viandas {
+          margin-top: 3%;
+          font-size: 12px; }
+
+/* Escritorio grande */
+@media (min-width: 1200px) {
+  .main-info .mas-info {
+    margin-top: 2%;
+    flex-direction: row;
+    padding: 1.5rem; }
+    .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo {
+      margin-bottom: 2%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-logo {
+        margin-right: 2%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-titulo {
+        font-size: 50px; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .parrafo-mar-viandas {
+        font-size: 18px; } }
+
+/* Escritorio */
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+  .main-info .mas-info {
+    flex-direction: row;
+    margin-top: 1.5%;
+    padding: 1.5rem; }
+    .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo {
+      margin-bottom: 1.5%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-logo {
+        margin-right: 1.5%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-titulo {
+        font-size: 45px; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .parrafo-mar-viandas {
+        font-size: 16px; } }
+
+/* Escritorio pequeño / tablet */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .main-info .mas-info {
+    flex-direction: row;
+    margin-top: 1%;
+    padding: 1.5rem; }
+    .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo {
+      margin-bottom: 1%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-logo {
+        margin-right: 1%; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .mar-viandas-titulo {
+        font-size: 40px; }
+      .main-info .mas-info .contenedor-descripcion .contenedor-logo-y-titulo .parrafo-mar-viandas {
+        font-size: 14px; } }
 
 .main-registrocompra {
   background-image: url("../img/fondo-gral.png");
@@ -496,6 +551,10 @@ span{
       line-height: 2;
       display: flex;
       flex-direction: column; }
+      .container-items .item-index .info-product .titulo-compra {
+        font-family: 'poppins';
+        font-size: 40px;
+        text-align: center; }
       .container-items .item-index .info-product .ingresar {
         text-decoration: none;
         text-align: center;

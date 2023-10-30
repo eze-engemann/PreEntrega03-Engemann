@@ -246,6 +246,12 @@ span{
             display: flex;
             flex-direction: column;
 
+            .titulo-compra{
+                font-family: 'poppins';
+                font-size: 40px;
+                text-align: center;
+            }
+
             .ingresar {
                 text-decoration: none;
                 text-align: center;
