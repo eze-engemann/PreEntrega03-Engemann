@@ -39,6 +39,7 @@
                 }
 
                 .container-mas {
+                    //color: $color-boton;
                     @extend %estilosflex;
                     vertical-align: middle;
 
@@ -48,7 +49,9 @@
                         color: black;
                         text-decoration: none;
                         align-items: flex-start;
-
+                        .p-info{
+                            color: $color-boton;
+                        }
                         .icon-mas {
                             width: 25px;
                         }

@@ -102,9 +102,12 @@
   <main>
     <!--barra buscar -->
     <section class="section-table">
-      <div class="search-container">
-        <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
-        <button class="search-button"><img src="../img/logo-lupa.png" alt="icono lupa" class="lupa"></button>
+        <div class="contenedor-viandas">
+          <h1 class="titulo-viandas-dia">Viandas del Día</h1>
+        </div>
+        <div class="search-container">
+          <input type="text" id="search-input" class="search-input" placeholder="Buscar...">
+          <button class="search-button"><img src="../img/logo-lupa.png" alt="icono lupa" class="lupa"></button>
       </div>
     </section>
 
@@ -120,13 +123,7 @@
             <p class="menu-style">Menu Keto</p>
             <div class="container-mas">
               <a href="../pages/masinfo.html" class="container-mas-link">
-
-                <!-- <p class="p-info">Mas Info   <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg> </p> -->
-                <p class="animate__animated animate__shakeX"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
+                <p class="animate__animated animate__shakeX p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none"
                     viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon-mas">
                     <path stroke-linecap="round" stroke-linejoin="round"
                       d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
@@ -136,11 +133,13 @@
           </div>
           <div class="precio-producto">
             <p class="valor">$400,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/guiso-de-papas-con-carne.jpg" alt="Guiso de Papas con Ternera" class="img-catalogo">
@@ -151,23 +150,24 @@
             <h2 class="nombre-vianda">Guiso de Papas con Ternera</h2>
             <p class="menu-style">Menu Clasico</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$600,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/pollo-al-vino.jpg" alt="Pollo al Malbec y Champiñones" class="img-catalogo">
@@ -178,23 +178,24 @@
             <h2 class="nombre-vianda">Pollo al Malbec y Champiñones</h2>
             <p class="menu-style">Menu Especial</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$900,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/wok-vegetales-fideos.png" alt="Wok de Vegetales y Fideos" class="img-catalogo">
@@ -205,23 +206,24 @@
             <h2 class="nombre-vianda">Wok de Vegetales y Fideos</h2>
             <p class="menu-style">Menu Vegetariano</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$600,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/vacio-relleno.jpg" alt="Vacio Relleno con Papas" class="img-catalogo">
@@ -232,23 +234,24 @@
             <h2 class="nombre-vianda">Vacio Relleno con Papas</h2>
             <p class="menu-style">Menu Especial</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$1000,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/tabule-de-quinoa.png" alt="Tabule de Quinoa Libanes" class="img-catalogo">
@@ -259,23 +262,24 @@
             <h2 class="nombre-vianda">Tabule de Quinoa Libanes</h2>
             <p class="menu-style">Menu Vegano</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$400,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/Salmon-con-pure-de-coliflor.jpg" alt="Salmon con Pure de Coliflor" class="img-catalogo">
@@ -286,23 +290,24 @@
             <h2 class="nombre-vianda">Salmon con Pure de Coliflor</h2>
             <p class="menu-style">Menu Keto</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$600,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/arroz-con-albondigas.jpg" alt="Arroz con Albondigas de Cerdo" class="img-catalogo">
@@ -313,23 +318,24 @@
             <h2 class="nombre-vianda">Arroz con Albondigas de Cerdo</h2>
             <p class="menu-style">Menu Clasico</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$600,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/napolitana-con-pure.png" alt="Milanesa Napolitana con Pure" class="img-catalogo">
@@ -340,23 +346,24 @@
             <h2 class="nombre-vianda">Milanesa Napolitana con Pure</h2>
             <p class="menu-style">Menu Clasico</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$600,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/zapallito-relleno.jpg" alt="zapallitos rellenos con arroz y verduras" class="img-catalogo">
@@ -367,23 +374,24 @@
             <h2 class="nombre-vianda">Zapallitos Rellenos con Arroz y Verduras</h2>
             <p class="menu-style">Menu Vegetariano</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$700,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/ensalada-mexicana.jpg" alt="Ensalada Mexicana con Palta" class="img-catalogo">
@@ -394,23 +402,24 @@
             <h2 class="nombre-vianda">Ensalada Mexicana con Palta</h2>
             <p class="menu-style">Menu Vegano</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$600,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
         <li class="item-viandas">
           <img src="../img/pizza-harina-garbanzos.png" alt="Pizza con Harina de Garbanzos" class="img-catalogo">
@@ -421,23 +430,24 @@
             <h2 class="nombre-vianda">Pizza con Harina de Garbanzos</h2>
             <p class="menu-style">Menu Celiaco</p>
             <div class="container-mas">
-              <a href="#" class="container-mas-link">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
-                  stroke="currentColor" class="icon-mas">
-                  <path stroke-linecap="round" stroke-linejoin="round"
-                    d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
-                </svg>
-                <p class="p-info">Mas Info</p>
+              <a href="../pages/masinfo.html" class="container-mas-link">
+                <p class="p-info"> <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
+                    stroke-width="1.5" stroke="currentColor" class="icon-mas">
+                    <path stroke-linecap="round" stroke-linejoin="round"
+                      d="M12 9v6m3-3H9m12 0a9 9 0 11-18 0 9 9 0 0118 0z" />
+                  </svg>Mas Info</p>
               </a>
             </div>
           </div>
           <div class="precio-producto">
             <p class="valor">$1200,00</p>
-            <td>
-              <input type="text" class="select-cant" placeholder="1">
-            </td>
+            <input type="text" class="select-cant" placeholder="1">
           </div>
-          <button class="aniadir-carrito">Añadir al carrito</button>
+          <button class="aniadir-carrito"><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25"
+              viewBox="0 0 24 24">
+              <path fill="#ffffff"
+                d="M17 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2M1 2v2h2l3.6 7.59l-1.36 2.45c-.15.28-.24.61-.24.96a2 2 0 0 0 2 2h12v-2H7.42a.25.25 0 0 1-.25-.25c0-.05.01-.09.03-.12L8.1 13h7.45c.75 0 1.41-.42 1.75-1.03l3.58-6.47c.07-.16.12-.33.12-.5a1 1 0 0 0-1-1H5.21l-.94-2M7 18c-1.11 0-2 .89-2 2a2 2 0 0 0 2 2a2 2 0 0 0 2-2a2 2 0 0 0-2-2Z" />
+            </svg>Añadir al carrito</button>
         </li>
 
       </ul>

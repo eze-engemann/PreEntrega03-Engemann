@@ -22,6 +22,14 @@ main {
     display: grid;
     grid-template-columns: auto;
     align-items: center;
+    .section-table{
+        .contenedor-viandas{
+            display: flex;
+            justify-content: center;
+            font-family: 'Poppins';
+            font-weight: 600;
+        }
+    }
 }
 
 /*barra busqueda nueva*/
@@ -50,11 +58,7 @@ main {
     }
 }
 
-
-/*slide imagenes
-img{
-    max-width: 100%;
-}/*/
+/*slide imagenes*/
 .slide-all {
     position: relative;
     max-width: 640px;
@@ -187,29 +191,6 @@ input[id="4"]:checked~.pagination .pagination-item[for="4"] {
     }
 }
 
-/*fin*/
-/*
-.main__index{
-    padding: 1.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}*/
-/*
-span{
-    ul{
-        li{
-            list-style: none;
-            background-color: $color-principal;
-            display: inline-block;
-            font-family: 'lato';
-            border-radius: 22px;
-            padding: 0.2rem;
-        }
-    }
-}
-*/
-
 /*viandas diarias y congeladas - index*/
 .container-items {
     display: grid;
@@ -282,7 +263,6 @@ span{
         /* Cambio a flexbox solo en esta media query */
         flex-direction: row;
         gap: 5%;
-        /* Ajustar el espacio entre los items */
         margin-left: 5%;
         margin-right: 5%;
 
